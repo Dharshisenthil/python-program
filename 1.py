@@ -35,8 +35,7 @@ def commonPrefix(arr, n):
   
 # Driver Code 
 if __name__ == '__main__': 
-    arr = ["geeksforgeeks", "geeks", 
-                    "geek", "geezer"] 
+    arr = ["Brozone", "Brozoned","Brozoner"] 
     n = len(arr) 
   
     commonPrefix(arr, n) 
