@@ -72,7 +72,7 @@ def longestPalSubstr(st) :
 
 
 # Driver program to test above functions 
-st = "forgeeksskeegfor"
+st = "pythonprogramming"
 l = longestPalSubstr(st) 
 print "Length is:", l 
 
