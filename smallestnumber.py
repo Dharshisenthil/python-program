@@ -1,13 +1,13 @@
-hh,pp=input().strip().split()
-pp=int(pp)
-h=0
+ha,bb=input().strip().split()
+bb=int(bb)
+a=0
 while h<len(hh)-1 and pp:
- if(hh[h]>hh[h+1]):
-  pp-=1
-  hh=hh[:h]+hh[h+1:]
-  if(h!=0):
-   h-=1
+ if(a[a]>aa[a+1]):
+  bb-=1
+  aa=aa[:a]+aa[a+1:]
+  if(a!=0):
+   a-=1
  else:
-  h+=1
-lk=hh[:len(hh)-pp]
+  a+=1
+lk=aa[:len(aa)-bb]
 print(lk)
