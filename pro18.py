@@ -1,4 +1,4 @@
-pr,br=map(int,input().split())
+apr,br=map(int,input().split())
 l1=[]
 for _ in range(apr):
     l1.append(input())
