@@ -1,42 +1,17 @@
-# A Python 3 Program to find the  
-# longest common prefix 
-  
-# A Utility Function to find the common  
-# prefix between first and last strings 
-def commonPrefixUtil(str1, str2): 
-    n1 = len(str1) 
-    n2 = len(str2) 
-      
-    result = "" 
-      
-    # Compare str1 and str2 
-    j = 0
-    i = 0
-    while(i <= n1 - 1 and j <= n2 - 1): 
-        if (str1[i] != str2[j]): 
-            break
-        result += (str1[i]) 
-          
-        i += 1
-        j += 1
-  
-    return (result) 
-  
-# A Function that returns the longest  
-# common prefix from the array of strings 
-def commonPrefix(arr, n): 
-      
-    # sorts the N set of strings 
-    arr.sort(reverse = False) 
-  
-    # prints the common prefix of the first  
-    # and the last string of the set of strings 
-    print(commonPrefixUtil(arr[0], arr[n - 1])) 
-  
-# Driver Code 
-if __name__ == '__main__': 
-    arr = ["Brozone", "Brozoned","Brozoner"] 
-    n = len(arr) 
-  
-    commonPrefix(arr, n) 
-      
+gg=int(input())
+k=[]
+for i in range (0,gg):
+	k.append(input())
+l1=len(k[0])
+e1=""
+for i in range (0,l1):
+	c=k[0][i]
+	f=0
+	for j in range (0,gg):
+		if(c!=k[j][i]):
+			f=1
+	if(f==0):
+		e1=e1+c
+	else:
+		break
+print(e1)
