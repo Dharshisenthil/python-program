@@ -1,7 +1,8 @@
-a = int(input())
-b = list(map(int, input().split()))
-c = int(len(b)/2)
-if sum(x[:c])//len(b[:c]) == sum(b[c:])//len(b[c:]):
-    print('yes')
+
+nousp=int(input())
+lis=list(map(int,input().split()))
+half=int(nousp/2)
+if sum(lis[:half])//len(lis[:half]) == sum(lis[half:])//len(lis[half:]):
+    print("yes")
 else:
-    print('no')
+        print("no")
