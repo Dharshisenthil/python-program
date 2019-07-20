@@ -1,9 +1,10 @@
-import string 
-alphabet = set(string.ascii_lowercase) 
-def ispangram(string): 
-return set(string.lower()) >= alphabet  
-string = "The quick brown fox jumps over the lazy dog"
-if(ispangram(string) == True): 
-	print("Yes") 
-else: 
-	print("No") 
+d=input()
+d=d.lower()
+sum_val=0
+for i in range(97,97+26):
+	if chr(i) in d:
+		sum_val+=1
+if sum_val==26:
+	print("yes")
+else:
+	print("no")
